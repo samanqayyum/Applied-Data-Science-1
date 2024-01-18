@@ -172,10 +172,10 @@ def cluster_and_visualize(df_cluster, n_clusters=3):
                         loc='upper right', fontsize=15)
 
     # give title to graph and add labels, adjusting font size and colors
-    plt.title('Inflation Rate vs GDP per capita of Pakistan', fontsize=20,
+    plt.title('Inflation Rate vs GDP per capita of Pakistan', fontsize=24,
               fontweight='bold', c='darkred', x=0.5, y=1.01)
-    plt.xlabel("Inflation rate (annual %)", fontsize=14)
-    plt.ylabel("GDP per capita (current US$)", fontsize=14)
+    plt.xlabel("Inflation rate (annual %)", fontsize=18)
+    plt.ylabel("GDP per capita (current US$)", fontsize=18)
 
     # show grids in graph
     plt.grid(True)
@@ -216,10 +216,10 @@ def fit_and_visualize(df_cluster):
     df_cluster.plot("Year", ["INF", "fit_inf"])
 
     # give title to graph and add labels, adjusting font size and colors
-    plt.title('Inflation rate (annual %) fitting for Pakistan', fontsize=12,
+    plt.title('Inflation rate (annual %) fitting for Pakistan', fontsize=13,
               fontweight='bold', c='darkred', x=0.5, y=1.01)
-    plt.xlabel("Years", fontsize=10)
-    plt.ylabel("Inflation rate (annual %)", fontsize=10)
+    plt.xlabel("Years", fontsize=12)
+    plt.ylabel("Inflation rate (annual %)", fontsize=12)
 
     # show grids in graph
     plt.grid(True)
@@ -245,10 +245,10 @@ def fit_and_visualize(df_cluster):
     df_cluster.plot("Year", ["GDP", "fit_gdp"])
 
     # give title to graph and add labels, adjusting font size and colors
-    plt.title('GDP per capita (current US$) fitting for Pakistan', fontsize=12,
+    plt.title('GDP per capita (current US$) fitting for Pakistan', fontsize=13,
               fontweight='bold', c='darkred', x=0.5, y=1.01)
-    plt.xlabel("Years", fontsize=10)
-    plt.ylabel("GDP per capita (current US$)", fontsize=10)
+    plt.xlabel("Years", fontsize=12)
+    plt.ylabel("GDP per capita (current US$)", fontsize=12)
 
     # show grids in graph
     plt.grid(True)
@@ -304,16 +304,16 @@ def forecast_and_visualize(df_cluster, param_inf, covar_inf, param_gdp, covar_gd
                      label="Confidence Margin")
 
     # give title to graph, adjusting font size and colors
-    plt.title('Inflation Rate (annual %) Forecast for Pakistan', fontsize=17,
+    plt.title('Inflation Rate (annual %) Forecast for Pakistan', fontsize=22,
               x=0.5, y=1.01, fontweight='bold',
               color='darkred')
 
     # add labels, adjusting font size and colors
-    plt.xlabel("Years", fontsize=14)
-    plt.ylabel("Inflation Rate (annual %)", fontsize=14)
+    plt.xlabel("Years", fontsize=16)
+    plt.ylabel("Inflation Rate (annual %)", fontsize=16)
 
     # add legends to plot and adjust size
-    plt.legend(fontsize=14)
+    plt.legend(fontsize=16)
 
     # show grids in graph
     plt.grid(True)
@@ -350,15 +350,15 @@ def forecast_and_visualize(df_cluster, param_inf, covar_inf, param_gdp, covar_gd
 
     # give title to graph, adjusting font size and colors
     plt.title('GDP per capita (current US$) Forecast for Pakistan', x=0.5,
-              y=1.01, fontsize=17, fontweight='bold',
+              y=1.01, fontsize=22, fontweight='bold',
               color='darkred')
 
     # add labels, adjusting font size and colors
-    plt.xlabel("Years", fontsize=14)
-    plt.ylabel("GDP per capita (current US$)", fontsize=14)
+    plt.xlabel("Years", fontsize=16)
+    plt.ylabel("GDP per capita (current US$)", fontsize=16)
 
     # add legends to plot and adjust size
-    plt.legend(fontsize=14)
+    plt.legend(fontsize=16)
 
     # show grids in graph
     plt.grid(True)
